@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHome | Orzuingizdagi uy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <a href="#home" class="logo">Dream<span>Home.</span></a>
+
+    <nav class="navbar">
+        <a href="#home">Bosh sahifa</a>
+        <a href="#properties">Uylar</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="#about">Biz haqimizda</a>
+        <a href="#contact">Aloqa</a>
+    </nav>
+
+    <a href="#contact" class="header-btn">Uy sotish +</a>
+</header>
+
+<main>
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="eyebrow">YANGI HAYOT SHU YERDAN BOSHLANADI</span>
+        <h1>Orzuingizdagi uy<br>sizni <span>kutmoqda.</span></h1>
+        <p>
+            Eng yaxshi uylarni biz bilan toping.
+            Qulay narxlar, ishonchli xizmat va yangi imkoniyatlar.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#properties" class="btn-primary">Uylarni ko'rish ↗️</a>
+            <a href="#about" class="btn-outline">Biz haqimizda</a>
+        </div>
+
+        <div class="stats">
+            <div><h3>1,200+</h3><p>Sotilgan uylar</p></div>
+            <div><h3>850+</h3><p>Mamnun mijozlar</p></div>
+            <div><h3>10+</h3><p>Yillik tajriba</p></div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=85" alt="Zamonaviy hashamatli uy">
+        <div class="floating-card">
+            <span>⭐️ 4.9 / 5</span>
+            <h3>Premium uylar</h3>
+            <p>Siz uchun eng yaxshi tanlov</p>
+        </div>
+    </div>
+</section>
+
+<section class="search-section">
+    <div class="search-heading">
+        <h2>O'zingizga mos uyni toping</h2>
+        <p>Bir necha soniyada qidiruvni boshlang.</p>
+    </div>
+
+    <form class="search-box" id="searchForm">
+        <div class="field">
+            <label for="location">Manzil</label>
+            <input id="location" type="text" placeholder="Masalan, Toshkent">
+        </div>
+        <div class="field">
+            <label for="type">Uy turi</label>
+            <select id="type">
+                <option value="all">Barcha uylar</option>
+                <option value="villa">Villa</option>
+                <option value="apartment">Kvartira</option>
+                <option value="house">Hovli uy</option>
+            </select>
+        </div>
+        <div class="field">
+            <label for="budget">Maksimal narx</label>
+            <select id="budget">
+                <option value="all">Barcha narxlar</option>
+                <option value="150000">$150,000 gacha</option>
+                <option value="250000">$250,000 gacha</option>
+                <option value="500000">$500,000 gacha</option>
+            </select>
+        </div>
+        <button type="submit" class="btn-primary">⌕ Qidirish</button>
+    </form>
+</section>
+
+<section class="properties section" id="properties">
+    <div class="section-top">
+        <div>
+            <span class="eyebrow">BIZNING TAKLIFLAR</span>
+            <h2>Eng mashhur uylar</h2>
+            <p>Orzuingizdagi uyni bugunoq tanlang.</p>
+        </div>
+        <a href="#properties" class="text-link">Barcha uylar ↗️</a>
+    </div>
+
+    <div class="property-grid" id="propertyGrid">
+        <article class="property-card" data-type="villa" data-price="245000" data-location="toshkent">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Zamonaviy villa">
+                <span class="tag">Sotuvda</span>
+                <button class="favorite" aria-label="Sevimlilarga qo'shish">♡</button>
+            </div>
+            <div class="property-info">
+                <span class="property-type">PREMIUM VILLA</span>
+                <h3>Zamonaviy hashamatli villa</h3>
+                <p class="address">📍 Toshkent, Mirzo Ulug'bek</p>
+                <div class="features">
+                    <span>🛏 5 xona</span><span>🚿 3 hammom</span><span>📐 280 m²</span>
+                </div>
+                <div class="property-bottom">
+                    <div><small>Narxi</small><h3>$245,000</h3></div>
+                    <button class="details-btn" data-house="Zamonaviy hashamatli villa">Batafsil ↗️</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="property-card" data-type="apartment" data-price="95000" data-location="toshkent">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Zamonaviy kvartira">
+                <span class="tag">Yangi</span>
+                <button class="favorite" aria-label="Sevimlilarga qo'shish">♡</button>
+            </div>
+            <div class="property-info">
+                <span class="property-type">KVARTIRA</span>
+                <h3>Minimalistik shahar kvartirasi</h3>
+                <p class="address">📍 Toshkent, Yunusobod</p>
+                <div class="features">
+                    <span>🛏 3 xona</span><span>🚿 2 hammom</span><span>📐 105 m²</span>
+                </div>
+                <div class="property-bottom">
+                    <div><small>Narxi</small><h3>$95,000</h3></div>
+                    <button class="details-btn" data-house="Minimalistik shahar kvartirasi">Batafsil ↗️</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="property-card" data-type="house" data-price="175000" data-location="samarqand">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=800&q=80" alt="Oilaviy hovli">
+                <span class="tag">Mashhur</span>
+                <button class="favorite" aria-label="Sevimlilarga qo'shish">♡</button>
+            </div>
+            <div class="property-info">
+                <span class="property-type">HOVLI UY</span>
+                <h3>Keng va shinam oilaviy uy</h3>
+                <p class="address">📍 Samarqand shahri</p>
+                <div class="features">
+                    <span>🛏 4 xona</span><span>🚿 2 hammom</span><span>📐 220 m²</span>
+                </div>
+                <div class="property-bottom">
+                    <div><small>Narxi</small><h3>$175,000</h3></div>
+                    <button class="details-btn" data-house="Keng va shinam oilaviy uy">Batafsil ↗️</button>
+                </div>
+            </div>
+        </article>
+        <article class="property-card" data-type="villa" data-price="390000" data-location="toshkent">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Premium zamonaviy uy">
+                <span class="tag">Premium</span>
+                <button class="favorite" aria-label="Sevimlilarga qo'shish">♡</button>
+            </div>
+            <div class="property-info">
+                <span class="property-type">LUXURY VILLA</span>
+                <h3>Premium oilaviy villa</h3>
+                <p class="address">📍 Toshkent, Qibray</p>
+                <div class="features">
+                    <span>🛏 6 xona</span><span>🚿 4 hammom</span><span>📐 360 m²</span>
+                </div>
+                <div class="property-bottom">
+                    <div><small>Narxi</small><h3>$390,000</h3></div>
+                    <button class="details-btn" data-house="Premium oilaviy villa">Batafsil ↗️</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="property-card" data-type="apartment" data-price="125000" data-location="toshkent">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80" alt="Yorug' kvartira">
+                <span class="tag">Sotuvda</span>
+                <button class="favorite" aria-label="Sevimlilarga qo'shish">♡</button>
+            </div>
+            <div class="property-info">
+                <span class="property-type">KVARTIRA</span>
+                <h3>Yorug' va shinam kvartira</h3>
+                <p class="address">📍 Toshkent, Chilonzor</p>
+                <div class="features">
+                    <span>🛏 3 xona</span><span>🚿 2 hammom</span><span>📐 120 m²</span>
+                </div>
+                <div class="property-bottom">
+                    <div><small>Narxi</small><h3>$125,000</h3></div>
+                    <button class="details-btn" data-house="Yorug' va shinam kvartira">Batafsil ↗️</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="property-card" data-type="house" data-price="145000" data-location="buxoro">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=800&q=80" alt="Keng zamonaviy hovli">
+                <span class="tag">Yangi</span>
+                <button class="favorite" aria-label="Sevimlilarga qo'shish">♡</button>
+            </div>
+            <div class="property-info">
+                <span class="property-type">HOVLI UY</span>
+                <h3>Yangi qurilgan zamonaviy uy</h3>
+                <p class="address">📍 Buxoro shahri</p>
+                <div class="features">
+                    <span>🛏 4 xona</span><span>🚿 2 hammom</span><span>📐 190 m²</span>
+                </div>
+                <div class="property-bottom">
+                    <div><small>Narxi</small><h3>$145,000</h3></div>
+                    <button class="details-btn" data-house="Yangi qurilgan zamonaviy uy">Batafsil ↗️</button>
+                </div>
+            </div>
+        </article>
+
+    </div>
+    <p id="noResults" class="no-results" hidden>Bu shartlarga mos uy topilmadi.</p>
+</section>
+<section class="services section" id="services">
+    <div class="section-top">
+        <div>
+            <span class="eyebrow">NIMA UCHUN BIZ?</span>
+            <h2>Siz uchun barcha xizmatlar</h2>
+            <p>Uy xarid qilishni oson va qulay qilamiz.</p>
+        </div>
+    </div>
+    <div class="service-grid">
+        <article class="service-card">
+            <div class="service-icon">⌕</div>
+            <h3>Uy topib berish</h3>
+            <p>Sizning talablaringiz va budjetingizga mos uylarni tanlaymiz.</p>
+        </article>
+        <article class="service-card">
+            <div class="service-icon">⌂</div>
+            <h3>Uy sotishga yordam</h3>
+            <p>Mulkni e'lon qilish va xaridor topish jarayonida yordam beramiz.</p>
+        </article>
+        <article class="service-card">
+            <div class="service-icon">✓</div>
+            <h3>Hujjatlar bo'yicha yordam</h3>
+            <p>Bitim jarayonidagi hujjatlar va kerakli bosqichlarni tushuntiramiz.</p>
+        </article>
+    </div>
+</section>
+
+<section class="about section" id="about">
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="DreamHome zamonaviy uylar">
+        <div class="experience-card"><strong>10+</strong><span>yillik tajriba</span></div>
+    </div>
+    <div class="about-content">
+        <span class="eyebrow">BIZ HAQIMIZDA</span>
+        <h2>Har bir oila uchun o'ziga xos uy.</h2>
+        <p>DreamHome — sizga mos uylarni topish, sotib olish yoki o'z mulkingizni sotish jarayonida yordam berishga mo'ljallangan ko'chmas mulk platformasi.</p>
+        <ul>
+            <li>✓ Turli budjetlar uchun uylar</li>
+            <li>✓ Qulay qidiruv va uylar katalogi</li>
+            <li>✓ Mijozlar bilan tezkor aloqa</li>
+        </ul>
+        <a href="#contact" class="btn-primary">Biz bilan bog'laning ↗️</a>
+    </div>
+</section>
+
+<section class="contact section" id="contact">
+    <div class="contact-copy">
+        <span class="eyebrow">BIZ BILAN BOG'LANING</span>
+        <h2>Orzuingizdagi uyga bir qadam qoldi.</h2>
+        <p>Ma'lumotlaringizni qoldiring. Siz tanlagan uy haqida gaplashamiz.</p>
+        <p>📍 Toshkent, O'zbekiston</p>
+        <p>✉️ info@dreamhome.uz</p>
+        <p>☎️ +998 90 123 45 67</p>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+        <label for="name">Ismingiz</label>
+        <input id="name" type="text" placeholder="Ismingizni kiriting" required>
+
+        <label for="phone">Telefon raqamingiz</label>
+        <input id="phone" type="tel" placeholder="+998 90 123 45 67" required>
+
+        <label for="message">Xabar</label>
+        <textarea id="message" rows="4" placeholder="Qanday uy qidiryapsiz?"></textarea>
+
+        <button type="submit" class="btn-primary">So'rov yuborish ↗️</button>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+    </form>
+</section>
+</main>
+
+<footer class="footer">
+    <a href="#home" class="logo">Dream<span>Home.</span></a>
+    <p>Orzuingizdagi uy shu yerdan boshlanadi.</p>
+    <div class="footer-links">
+        <a href="#home">Bosh sahifa</a>
+        <a href="#properties">Uylar</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="#contact">Aloqa</a>
+    </div>
+    <p class="copyright">© 2026 DreamHome. Barcha huquqlar himoyalangan.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
